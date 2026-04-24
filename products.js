@@ -53,7 +53,7 @@ function renderProducts(products) {
     });
 }
 
-fetch('https://massa-clothing-store-personal-project-back-end-production.up.railway.app/products')
+fetch('https://massa-clothing-store-personal-project-back-end-production.up.railway.app/api/products')
     .then(res => res.json())
     .then(data => renderProducts(data))
     .catch(() => renderProducts(fallbackProducts));
